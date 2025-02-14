@@ -15,6 +15,7 @@ header {
     color: #fff;
 }
 
+/* Логотип */
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -26,12 +27,32 @@ header {
     padding: 0 5px;
 }
 
-.privacy-policy {
-    color: #fff;
-    text-decoration: underline;
-    font-size: 14px;
+/* Контейнер для кнопок Terms & Privacy */
+.header-links {
+    display: flex;
+    gap: 15px; /* Расстояние между кнопками */
 }
 
+/* Кнопки Terms of Service и Privacy Policy */
+.header-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 2px solid #fff; /* Белая рамка */
+    background-color: transparent; /* Прозрачный фон */
+    color: #fff; /* Белый текст */
+    transition: all 0.3s ease;
+}
+
+/* Эффект при наведении */
+.header-links a:hover {
+    background-color: #ffd700; /* Золотой фон */
+    color: #004c4c; /* Темный текст */
+}
+
+/* Основная часть */
 main {
     text-align: center;
     padding: 20px;
@@ -60,9 +81,9 @@ h1 {
 }
 
 .game img {
-    width: 100%; /* Картинка займёт всю ширину блока */
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game p {
@@ -83,19 +104,20 @@ h1 {
     text-decoration: underline;
 }
 
+/* Текст */
 p {
-    text-align: left; /* Выравнивание текста по левому краю */
-    margin-bottom: 20px; /* Отступ между блоками */
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .text-right {
-    text-align: right; /* Выравнивание текста по правому краю */
+    text-align: right;
 }
 
 .text-black {
-    color: #000; /* Черный текст */
+    color: #000;
 }
 
 .text-gray {
-    color: #37474F; /* Серый текст */
+    color: #37474F;
 }
