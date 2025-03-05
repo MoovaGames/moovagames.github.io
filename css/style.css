@@ -105,18 +105,19 @@ h1 {
     margin: 10px 0;
 }
 
-/* Контейнер кнопок магазинов */
+/* Контейнер для кнопок магазинов */
 .store-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 8px;  /* Чуть уменьшаем расстояние между кнопками */
+    margin-top: 15px; /* Делаем отступ сверху */
+    flex-wrap: wrap; /* Позволяем кнопкам переноситься на новую строку, если не помещаются */
 }
 
-/* Стили для кнопок магазинов */
+/* Кнопки магазинов */
 .store-buttons img {
-    width: 120px;
-    height: auto;
+    width: 163px;  /* Оригинальная ширина */
+    height: 50px;  /* Оригинальная высота */
     transition: transform 0.2s ease-in-out;
 }
 
