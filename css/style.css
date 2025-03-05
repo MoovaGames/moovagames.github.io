@@ -80,7 +80,7 @@ h1 {
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
-    width: 280px; /* Делаем фиксированную ширину */
+    width: 280px; /* Фиксированная ширина */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -113,16 +113,16 @@ h1 {
     margin: 10px 0;
 }
 
-/* Контейнер кнопок магазинов (выравниваем их по центру) */
-.store-buttons-container {
+/* Контейнер кнопок магазинов (всегда внутри карточки) */
+.store-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px; /* Одинаковое расстояние между кнопками */
+    gap: 8px; /* Равномерное расстояние между кнопками */
     margin-top: 10px;
 }
 
-/* Выравниваем все кнопки магазинов */
+/* Кнопки магазинов */
 .store-buttons img {
     width: 130px;  /* Делаем все кнопки одинаковыми */
     height: auto;
