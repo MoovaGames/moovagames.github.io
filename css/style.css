@@ -72,14 +72,15 @@ h1 {
     gap: 30px;
 }
 
-/* Карточка игры */
+/* Карточка игры (уменьшаем ее, убираем кнопки из белого контейнера) */
 .game {
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
-    width: 270px;
+    width: 270px; /* Немного уменьшаем ширину */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Добавляем отступ снизу */
 }
 
 /* Изображение игры */
@@ -100,24 +101,25 @@ h1 {
 /* Описание игры */
 .game-description {
     font-size: 14px;
+    font-weight: normal; /* Убираем жирность */
     color: #333;
     text-align: center;
     margin: 10px 0;
 }
 
-/* Контейнер для кнопок магазинов */
-.store-buttons {
+/* Контейнер для кнопок магазинов (размещаем ПОД белым контейнером) */
+.store-buttons-container {
     display: flex;
     justify-content: center;
-    gap: 8px;  /* Чуть уменьшаем расстояние между кнопками */
-    margin-top: 15px; /* Делаем отступ сверху */
-    flex-wrap: wrap; /* Позволяем кнопкам переноситься на новую строку, если не помещаются */
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: -5px; /* Уменьшаем отступ сверху */
 }
 
-/* Кнопки магазинов */
+/* Кнопки магазинов (уменьшаем их размер) */
 .store-buttons img {
-    width: 163px;  /* Оригинальная ширина */
-    height: 50px;  /* Оригинальная высота */
+    width: 130px;  /* Делаем кнопки меньше */
+    height: auto;
     transition: transform 0.2s ease-in-out;
 }
 
