@@ -69,8 +69,10 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: stretch; /* Исправляем выравнивание */
-    gap: 30px;
+    align-items: flex-start; /* Карточки будут выровнены сверху */
+    gap: 30px; /* Одинаковое расстояние между карточками */
+    max-width: 1200px; /* Добавляем ограничение по ширине */
+    margin: 0 auto; /* Центрируем */
 }
 
 /* Карточка игры */
@@ -78,11 +80,13 @@ h1 {
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
-    width: 280px; /* Достаточно широкая, чтобы текст не сжимался */
+    width: 280px; /* Делаем фиксированную ширину */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%; /* Чтобы все карточки были одинаковыми */
 }
 
 /* Изображение игры */
